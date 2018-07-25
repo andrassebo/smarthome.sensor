@@ -10,7 +10,7 @@
 #define INFLUXDB_DATABASE "sensor"
 
 const char* ssid     = "orokmozgo";
-const char* password = "";
+const char* password = "C1rm1c1ca88";
 
 const String host = "192.168.0.200";
 char* mac = "n/a";
