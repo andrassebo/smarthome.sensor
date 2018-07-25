@@ -2,7 +2,7 @@
 ## description
 Very basic code to collect temperature and humidity metrics and send them into a local InfluxDB.
 
-## prereq.
+## prerequisites
 - nodemcu 12 with wifi
 - dht11
 - deployed [SmartHome.Dashboard](https://github.com/andrassebo/smarthome.dashboard) enviornment
