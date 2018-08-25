@@ -4,7 +4,7 @@
 #include "DHT.h"
 
 #define DHTPIN 4
-#define DHTTYPE DHT11 
+#define DHTTYPE DHT11
 
 #define INFLUXDB_HOST "192.168.13.10"
 #define INFLUXDB_DATABASE "sensor"
@@ -22,6 +22,8 @@ Influxdb influx(INFLUXDB_HOST); // port defaults to 8086
 void setup() {
   Serial.begin(9600);
   delay(2000);
+
+  dht.begin();
 
   WiFi.disconnect(true);
   delay(1000);
