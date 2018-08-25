@@ -6,13 +6,12 @@
 #define DHTPIN 4
 #define DHTTYPE DHT11 
 
-#define INFLUXDB_HOST "192.168.0.200"
+#define INFLUXDB_HOST "192.168.13.10"
 #define INFLUXDB_DATABASE "sensor"
 
 const char* ssid     = "orokmozgo";
-const char* password = "C1rm1c1ca88";
+const char* password = "";
 
-const String host = "192.168.0.200";
 char* mac = "n/a";
 
 WiFiClient client;
@@ -21,7 +20,7 @@ Influxdb influx(INFLUXDB_HOST); // port defaults to 8086
 
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(9600);
   delay(2000);
 
   WiFi.disconnect(true);
@@ -76,4 +75,3 @@ void loop() {
   
   delay(60000);
 }
-
